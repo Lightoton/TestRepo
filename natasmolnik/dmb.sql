@@ -1,2 +1,0 @@
-select * music
-from account
