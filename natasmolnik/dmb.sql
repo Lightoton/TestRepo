@@ -1,0 +1,2 @@
+select * music
+from account
