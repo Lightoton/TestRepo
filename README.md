@@ -1,2 +1,2 @@
 # TestRepo
-Hello all!
+Hello!
