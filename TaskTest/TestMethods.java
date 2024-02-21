@@ -4,15 +4,14 @@ public class TestMethods {
     // Метод для нахождения среднего значения массива
     public static double findAverage(int[] array) {
         int sum = 0;
-        for (int num : array) {
-            sum += num;
-        }
-        return sum / array.length;
+        for (int num : array) sum += num;
+
+        return (double) sum /array.length;
     }
     // Метод для поиска максимального значения в массиве
     public static int findMax(int[] array) {
         int max = array[0];
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] > max) {
                 max = array[i];
             }
@@ -22,7 +21,7 @@ public class TestMethods {
     // Метод для вычисления суммы всех элементов массива
     public static int calculateSum(int[] array) {
         int sum = 0;
-        for (int i = 0; i <= array.length; i++) {
+        for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
         return sum;
@@ -32,7 +31,7 @@ public class TestMethods {
         if (num <= 1) {
             return false;
         }
-        for (int i = 2; i <= Math.sqrt(num); i++) {
+        for (int i = 2; i < num/2; i++) {
             if (num % i == 0) {
                 return false;
             }
@@ -40,3 +39,5 @@ public class TestMethods {
         return true;
     }
 }
+
+
